@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Font Family for serif */
+body, .font-serif {
+  font-family: "Times New Roman", serif;
+  background-color: rgb(249 245 226 / var(--tw-bg-opacity, 1));
+}
+
+/* Typography Styles */
+.prose {
+  font-family: "Times New Roman", serif;
+  max-width: 65ch;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Typography Default Overrides */
+.prose p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.prose ul {
+  padding-left: 1.5em;
+}
+
+.prose ul > li {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/* Prose Colors */
+.prose {
+  --tw-prose-body: #333;
+  --tw-prose-headings: #111;
+  --tw-prose-links: #111;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: var(--tw-prose-headings);
+}
+
+.prose a {
+  color: var(--tw-prose-links);
+}
